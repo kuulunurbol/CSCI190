@@ -1,0 +1,115 @@
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header 1 styling */
+.header-1 {
+    display: flex;               /* Use Flexbox for layout */
+    justify-content: space-between; /* Position elements to the left and right */
+    align-items: center;         /* Vertically center items */
+    background-color: hsl(111, 31%, 32%);      /* Background color for the header */
+    padding: 1rem 2rem;          /* Padding to give some space around */
+}
+
+.header-2{
+    display: flex;               /* Use Flexbox for layout */
+    justify-content: space-between;
+    display: flex;  /* Use flexbox for layout */
+    align-items: center;  /* Vertically center the content */
+    justify-content: flex-end;  /* Align content to the left */
+    background-color:  hsl(120, 1%, 87%);
+    padding: 1rem 2rem; 
+    border-bottom-left-radius: 5px;  /* Round bottom-left corner */
+    border-bottom-right-radius: 5px; /* Round bottom-right corner */
+    word-spacing: 10px; 
+    align-items: stretch;
+    
+}
+.header-2 a{
+   
+    display: inline-block;
+    padding: 10px 20px;   
+    text-decoration: none;
+    padding: 0 20px; 
+    color: black;
+    height: 100%;  
+
+}
+.header-2 a:hover {
+    background-color:  hsl(111, 31%, 32%);  /* Darker green on hover */
+    color: white 
+}
+
+/* Social media links styling */
+.social-links {
+    display: flex;                 /* Arrange social links horizontally */
+    justify-content: flex-end;     /* Align social links to the right */
+}
+
+.social-links a {
+    margin-left: 15px;             /* Space between social links */
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+/* Menu button styling */
+.menu-btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+    border: none;
+    background: none;
+    z-index: 10000; /* Ensure the menu button is above everything else */
+}
+
+/* Side menu styling */
+.side-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 200px;
+    background-color: hsl(111, 31%, 32%); 
+    color: white;
+    padding-top: 60px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 9999; /* Ensure side menu is above other content */
+}
+
+/* Active side menu */
+.side-menu.active {
+    transform: translateX(0);
+    z-index: 9999;
+}
+
+.side-menu a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;            /* Vertically center logo and text */
+    justify-content: center;        /* Center the logo and text horizontally */
+    flex-grow: 1;                   /* Allow the logo container to take available space */
+    text-align: center;
+    margin-left: 160px; 
+}
+
+.logo img {
+    width: 50px;                   /* Set the width of the logo */
+    height: auto;                  /* Maintain the aspect ratio */
+    margin-right: 10px;             /* Space between logo and text */
+}
+
+.logo h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;                      /* Remove any default margin */
+}

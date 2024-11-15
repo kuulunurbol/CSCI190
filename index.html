@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethno Kyrgyz Club</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+</head>
+<body>
+
+    <!-- Header with logo, social media links, and menu button -->
+    <header class="header-1">
+        <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+
+        <div class="logo">
+            <img src="logo.png" alt="Ethno Kyrgyz Logo" />
+            <h3>Etho Kyrgyz Club</h3>
+        </div>
+
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="https://www.instagram.com/ethnokyrgyzclub/" target="_blank">Instagram</a>
+        </div>
+        
+    </header>
+
+    <header class="header-2">
+        <a href="#Classes">Classes</a>
+        <a href="#AcademicYear">Academic-Year</a>
+        <a href="#Dance">Dance</a>
+    </header>
+
+
+    <!-- Side menu with links -->
+    <div id="sideMenu" class="side-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const sideMenu = document.getElementById("sideMenu");
+            sideMenu.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
