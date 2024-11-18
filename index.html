@@ -5,47 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ethno Kyrgyz Club</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+
+
 </head>
 <body>
 
-    <!-- Header with logo, social media links, and menu button -->
+    <!-- Header 1 with logo, social media links, and menu button -->
     <header class="header-1">
-        <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
 
         <div class="logo">
-            <img src="logo.png" alt="Ethno Kyrgyz Logo" />
-            <h3>Etho Kyrgyz Club</h3>
+            <!-- Make the logo and text clickable -->
+            <a href="index.html">
+                <img src="logo.png" alt="Ethno Kyrgyz Logo" />
+                <h3>Ethno Kyrgyz Club</h3>
+            </a>
         </div>
 
         <div class="social-links">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
             <a href="https://www.instagram.com/ethnokyrgyzclub/" target="_blank">Instagram</a>
         </div>
         
     </header>
 
+    <!-- Header 2 with activity options -->
     <header class="header-2">
+        <a href="#Events">Events</a>
         <a href="#Classes">Classes</a>
-        <a href="#AcademicYear">Academic-Year</a>
         <a href="#Dance">Dance</a>
+        <a href="#AcademicYear">Academic-Year</a>
     </header>
+    
+    <div class="mainInfo">
+        <img src="images/photo7.png" alt="Who Are We?"/>
+        
+        <h2>Биз - ETHNO KYRGYZ CLUB!</h2>
+        <p>
+        Тарыхый жана маданий мурастарыбызды сактап калуу максатын көздөгөн жамаат!
+        </p>
 
+        <h2>We are ETHNO KYRGYZ CLUB!</h2>
+        <p>
+        A community whose goal is to preserve our historical and cultural heritage!
+        </p>
 
-    <!-- Side menu with links -->
-    <div id="sideMenu" class="side-menu">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <h2>Мы - ETHNO KYRGYZ CLUB!</h2>
+        <p>
+        Сообщество, целью которого является сохранение нашего историко-культурного наследия!
+        </p>
     </div>
 
-    <script>
-        function toggleMenu() {
-            const sideMenu = document.getElementById("sideMenu");
-            sideMenu.classList.toggle("active");
-        }
-    </script>
 
 </body>
 </html>
