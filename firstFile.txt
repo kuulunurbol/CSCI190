@@ -1,3 +1,0 @@
-my first data to push to git repo
-change this line 
-and another
